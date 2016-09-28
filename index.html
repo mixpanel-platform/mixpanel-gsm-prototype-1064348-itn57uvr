@@ -336,6 +336,7 @@
 <div class="row">
 <div id="mpLineChart" class="content-wrapper">
   <h2>Hardcoded Data Example</h2>
+  <p><b>Enter Store</b> by <b>Store Name</b></p>
 <script>
 
 $(document).ready(function() {
@@ -348,7 +349,7 @@ $(document).ready(function() {
         }
     }); // Create a line chart
     //query
-    MP.api.segment("Enter Store", "Campaign Source").done(function(data) {
+    MP.api.segment("Enter Store", "Store Name").done(function(data) {
         lineChart.MPChart('setData', data); // Set the chart's data
     })
 
