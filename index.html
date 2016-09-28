@@ -117,17 +117,17 @@
 
             <div class="pull-right"><img height="40px"
             src=
-            "https://d018d7277c9a2a72c253b637c4abe4d24d29449c.googledrive.com/host/0BxwayM8qQaCVOGZvekkxYTNSZVU"
+            "https://worldvectorlogo.com/logos/mixpanel.svg"
             width="120px">
             </div>
 
 
             <div class="pull-left"><img height="30px" src=
-            "https://dl.dropboxusercontent.com/u/51386401/andyos.png" width=
+            "https://dl.dropboxusercontent.com/u/239261613/gcm.jpg" width=
             "124px">
             </div>
             <!-- END Language list    -->
-            Andy OS: Real-Time User Dashboard <small data-localize=
+            GSM: Real-Time User Dashboard <small data-localize=
             "dashboard.WELCOME"></small>
         </div>
         <!-- START widgets box-->
@@ -153,7 +153,7 @@
 
 
                             <div class="text-uppercase text-center">
-                                Current Users
+                                Current Beacons Connected
                             </div>
                         </div>
                     </div>
@@ -179,7 +179,7 @@
 
 
                             <div class="text-uppercase text-center">
-                                MAU'S
+                                Customers At Sea
                             </div>
                         </div>
                     </div>
@@ -205,7 +205,7 @@
 
 
                             <div class="text-uppercase text-center">
-                                DAU'S
+                                Active Coupons
                             </div>
                         </div>
                     </div>
@@ -252,8 +252,7 @@
             <div class="col-lg-12">
                 <div class="panel panel-default">
                     <div class="panel-heading text-center">
-                        Real-Time Ad Impressions -- How many ads have been
-                        viewed in the last 30 seconds (by category)?
+                        Real-Time Coupons by Cruise Line:
                     </div>
 
 
@@ -499,7 +498,7 @@
             $('.date-pm').text(ampm);
 
             var pageViewParams = {limit: 25, type:'unique', unit:'day', from: moment().subtract(50, 'days'), to: moment().subtract(10, 'days')}
-            var pageViewQuery = MP.api.segment('ad.impression', 'ad category', pageViewParams)
+            var pageViewQuery = MP.api.segment('Open Coupon', 'cruiseLine', pageViewParams)
             
 
             pageViewQuery.done(function(results){
