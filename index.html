@@ -338,7 +338,7 @@
   <h2>Hardcoded Data Example</h2>
 <script>
 
-$(document).ready(function() {
+
     var lineChart = $('<div></div>').appendTo('body').MPChart({
         chartType: 'line',
         highchartsOptions: {
@@ -346,8 +346,9 @@ $(document).ready(function() {
                 backgroundColor: '#fffce7' // Make tooltip background yellow
             }
         }
-    }); // Create a line chart
+     // Create a line chart
     //query
+    $(document).ready(function() {
     MP.api.segment("Enter Store", "Campaign Source").done(function(data) {
         lineChart.MPChart('setData', data); // Set the chart's data
     })
