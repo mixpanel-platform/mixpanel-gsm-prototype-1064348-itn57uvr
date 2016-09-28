@@ -333,7 +333,7 @@
     }
     </style><!-- demo report -->
 
-<div id="mpLineChart">
+<div id="mpLineChart" class="content-wrapper">
 <script>
 $(document).ready(function() {
     var lineChart = $('<div></div>').appendTo('body').MPChart({
@@ -345,7 +345,7 @@ $(document).ready(function() {
         }
     }); // Create a line chart
     //query
-    MP.api.segment("Enter Store", "Campaign Source).done(function(data) {
+    MP.api.segment("Enter Store", "Campaign Source").done(function(data) {
         lineChart.MPChart('setData', data); // Set the chart's data
     })
 
